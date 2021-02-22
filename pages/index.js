@@ -1,6 +1,8 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Footer from "@components/Footer";
+import dynamic from "next/dynamic";
+import Head from "next/head";
+
+const Header = dynamic(() => import("../components/Header"));
 
 export default function Home() {
   return (
@@ -19,5 +21,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  )
+  );
 }
