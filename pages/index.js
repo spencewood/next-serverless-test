@@ -2,7 +2,10 @@ import Footer from "@components/Footer";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Header = dynamic(() => import("../components/Header"));
+const Header = dynamic(
+  () => import(/* webpackChunkName: 'header' */ "../components/Header"),
+  { ssr: true }
+);
 
 export default function Home() {
   return (
