@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "postbuild": "next-on-netlify"
   },
   "dependencies": {
     "next": "10.0.6",
+    "next-on-netlify": "github:netlify/next-on-netlify#ll/est-dynamic-imports",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
