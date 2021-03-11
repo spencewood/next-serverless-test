@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 
 const Header = dynamic(
-  () => import(/* webpackChunkName: 'header' */ "../../components/Header"),
+  () => import(/* webpackChunkName: 'header' */ "../components/Header"),
   { ssr: true }
 );
 
